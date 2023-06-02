@@ -97,8 +97,6 @@ public class CardDeliveryOrderTest {
             $("[data-test-id='date'] input").setValue(dateGenerator(5));
             $("[data-test-id='name'] input").setValue("Петрова Юля");
             $("[data-test-id='phone'] input").setValue("+78994432567");
-            $("[data-test-id='agreement'] .checkbox__text").click();
-            $("button.button_theme_alfa-on-white").click();
             $("button.button_theme_alfa-on-white").click();
             assertTrue($("[data-test-id='agreement'].input_invalid .checkbox__text").isDisplayed());
         }
